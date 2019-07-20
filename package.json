@@ -1,0 +1,19 @@
+{
+  "name": "texteditor",
+  "version": "1.0.0",
+  "description": "simple text editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinm/textEditor.git"
+  },
+  "author": "Martin Malinowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinm/textEditor/issues"
+  },
+  "homepage": "https://github.com/martinm/textEditor#readme"
+}
