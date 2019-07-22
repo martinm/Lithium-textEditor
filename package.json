@@ -4,7 +4,7 @@
   "description": "simple text editor",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electromon main.js"
   },
   "repository": {
     "type": "git",
