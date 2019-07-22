@@ -1,3 +1,3 @@
 window.testFunc = () => {
-  alert("Hello!");
+  // alert("Hello!");
 }
