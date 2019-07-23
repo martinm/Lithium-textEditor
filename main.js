@@ -5,13 +5,11 @@ let mainWindow
 
 createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 720,
-    minWidth: 640,
-    minHeight: 480,
+    // frame: false,
+    width: 1280, height: 720,
+    minWidth: 640, minHeight: 480,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+      preload: path.join(__dirname, 'preload.js')    }
   })
 
   mainWindow.loadFile('index.html')

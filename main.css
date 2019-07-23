@@ -29,3 +29,17 @@ html, body {
   box-sizing: border-box;
   padding: 30px;
 }
+
+.fileTitle {
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+  vertical-align: middle;
+  border-top: 1px solid rgb(90, 90, 90);
+}
+
+.fileTitle:hover {
+  background-color: rgb(90, 90, 90);
+  cursor: pointer;
+}
