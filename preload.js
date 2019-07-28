@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const directoryPath = path.join(__dirname, 'notes');
-
+let temp;
 readFile = (documentId) => {
   fs.readFile("./notes/"+documentId+".txt", (err, data) => {
     if (err) console.log(err);
@@ -40,5 +40,12 @@ constructFileTitleElement = (fileName) => {
   newDiv.id = fileName;
   newDiv.innerText = fileName;
   titleHeader.appendChild(newDiv)
+}
 
+highlightDocument = (documentId) => {
+  let selectedDocument = document.getElementById(documentId);
+  if (temp !== undefined)
+    temp.style.backgroundColor = "rgb(60, 60, 60)";
+  temp = selectedDocument;
+  selectedDocument.style.backgroundColor = "red";
 }

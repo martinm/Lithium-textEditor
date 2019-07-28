@@ -10,6 +10,7 @@ scanFile()
 titleHeader.onclick = (e) => {
     currentDocumentId = e.target.id;
     readFile(currentDocumentId);
+    highlightDocument(currentDocumentId);
 }
 
 //trigger save function when cmnd+s or ctr+s is pressed
@@ -24,5 +25,4 @@ document.onkeydown = (k) => {
         keydownArr[0] = null;
         keydownArr[1] = null;
     }
-    
 }
