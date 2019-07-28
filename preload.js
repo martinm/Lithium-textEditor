@@ -11,7 +11,7 @@ readFile = (documentId) => {
 }
 
 writeFile = (documentId) => {
-    const textCont = document.getElementById(documentId).innerText;
+    let textCont = document.getElementById("documentContent").innerText;
     fs.writeFile("./notes/"+documentId+".txt", textCont, (err) => {
       if (err) console.log(err);
     });
