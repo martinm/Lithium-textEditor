@@ -14,7 +14,7 @@ createWindow = () => {
 
   mainWindow.loadFile('index.html')
 
-//   mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', () => {
     mainWindow = null

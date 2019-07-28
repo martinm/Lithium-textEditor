@@ -1,8 +1,7 @@
 const mybutton = document.getElementById("titleHeader");
 
-readFile()
 scanFile()
 
-mybutton.onclick = () => {
-    writeFile();
+mybutton.onclick = (e) => {
+    readFile(e.target.id);
 }
