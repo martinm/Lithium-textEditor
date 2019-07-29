@@ -43,3 +43,36 @@ html, body {
   background-color: rgb(90, 90, 90);
   cursor: pointer;
 }
+
+#menuButtons {
+  width: 20%;
+  background-color: rgb(60, 60, 60);;
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+}
+
+#newNoteButton {
+  width: 50%;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-top: 1px solid rgb(90, 90, 90);
+}
+
+#saveNoteButton {
+  width: 50%;
+  height: 30px;
+  float: right;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-top: 1px solid rgb(90, 90, 90);
+}
+
+#newNoteButton:hover, #saveNoteButton:hover {
+  background-color: rgb(90, 90, 90);
+  cursor: pointer;
+}
