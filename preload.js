@@ -47,5 +47,5 @@ highlightDocument = (documentId) => {
   if (temp !== undefined)
     temp.style.backgroundColor = "rgb(60, 60, 60)";
   temp = selectedDocument;
-  selectedDocument.style.backgroundColor = "red";
+  selectedDocument.style.backgroundColor = "rgba(77, 155, 191, 75)";
 }
