@@ -49,3 +49,20 @@ highlightDocument = (documentId) => {
   temp = selectedDocument;
   selectedDocument.style.backgroundColor = "rgba(77, 155, 191, 75)";
 }
+
+newDoc = () => {
+  const newNoteNameWindow = document.getElementById("newNoteNameWindow");
+  newNoteNameWindow.style.display = "block";
+  newNoteNameWindow.focus();
+  newNoteNameWindow.onkeydown = (k) => {
+      if (k.keyCode == 13) {
+          newNoteNameWindow.style.display = "none";
+          constructFileTitleElement(newNoteNameWindow.textContent);
+          currentDocumentId = newNoteNameWindow.textContent;
+          documentContent.focus();
+          highlightDocument(currentDocumentId);
+          newNoteNameWindow.textContent = "";
+          documentContent.textContent = "";
+      }
+  }
+}

@@ -21,20 +21,7 @@ titleHeader.onclick = (e) => {
 
 //unhide element when "new" button is clicked so the user can type in new note name
 newButton.onclick = () => {
-    const newNoteNameWindow = document.getElementById("newNoteNameWindow");
-    newNoteNameWindow.style.display = "block";
-    newNoteNameWindow.focus();
-    newNoteNameWindow.onkeydown = (k) => {
-        if (k.keyCode == 13) {
-            newNoteNameWindow.style.display = "none";
-            constructFileTitleElement(newNoteNameWindow.textContent);
-            currentDocumentId = newNoteNameWindow.textContent;
-            documentContent.focus();
-            highlightDocument(currentDocumentId);
-            newNoteNameWindow.textContent = "";
-            documentContent.textContent = "";
-        }
-    }
+    newDoc();
 }
 
 //trigger save function when save button is pressed
@@ -47,7 +34,7 @@ saveButton.onclick = () => {
 //trigger save function when cmnd+s or ctr+s is pressed
 document.onkeydown = (k) => {
     keydownArr[keydownCounter] = k.keyCode;
-    if (keydownCounter == 0 && keydownArr[keydownCounter] == (91 || 17))
+    if (keydownCounter == 0 && keydownArr[keydownCounter] == (91 || 17 || 78))
         keydownCounter++;
     else
         keydownCounter = 0;
@@ -57,7 +44,8 @@ document.onkeydown = (k) => {
         keydownArr[1] = null;
         saveButton.style.color = "rgb(120, 120, 120)";
         saveButtonFlag = false;
-    }
+    } else if ((keydownArr[0] == (91) && keydownArr[1] == 78)) 
+        newDoc();
 }
 
 //if button is pressed while focused on content window, save button goes light from grey
