@@ -21,4 +21,4 @@ This project is still under developement, installers for MacOS, Linux and Window
 - cmnd/ctrl + n | create new note
 
 ## Screenshot 
-![](https://github.com/martinm/Lithium-textEditor/screenshot.png)
+![](https://https://github.com/martinm/Lithium-textEditor/blob/master/screenshot.png)
