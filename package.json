@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/martinm/textEditor#readme",
   "dependencies": {
-    "electron": "^7.2.4"
+    "electron": "^11.5.0"
   }
 }
